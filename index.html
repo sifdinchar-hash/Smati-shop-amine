@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>متجر السراول - Pants Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- خط من غوغل (اختياري) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body dir="rtl">
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🩳</span>
+        <span class="logo-text">متجر السراول</span>
+      </div>
+      <nav class="nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>سراول عصرية بجودة عالية</h1>
+        <p>متخصصين في بيع السراول بجميع الأنواع: جينز، كلاسيك، سبور… أثمنة مناسبة وجودة ممتازة.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">تصفح المنتجات</a>
+          <a href="https://wa.me/212676377412" target="_blank" class="btn btn-outline">
+            تواصل مباشر عبر واتساب
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- غير هذا المسار بصورة حقيقية من عندك -->
+        <img src="images/hero-pants.jpg" alt="مجموعة سراول عصرية" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>منتجاتنا</h2>
+        <p>اختار السروال اللي مناسب لستيلك.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="ابحث عن سروال (جينز، كلاسيك...)" />
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">الكل</button>
+          <button class="filter-btn" data-category="jeans">جينز</button>
+          <button class="filter-btn" data-category="classic">كلاسيك</button>
+          <button class="filter-btn" data-category="sport">سبور</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- بطاقة منتج 1 -->
+        <article class="product-card" data-category="jeans" data-name="سروال جينز أزرق مقطع" data-price="199">
+          <div class="product-image">
+            <!-- حط صورة حقيقية هنا -->
+            <img src="images/jeans-1.jpg" alt="سروال جينز أزرق" />
+          </div>
+          <div class="product-body">
+            <h3>سروال جينز أزرق مقطع</h3>
+            <p>مناسب للستيل الكاجوال اليومي، قماش مريح وجودة عالية.</p>
+            <div class="product-footer">
+              <span class="price">199 درهم</span>
+              <button class="btn btn-whatsapp">اطلب عبر واتساب</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- بطاقة منتج 2 -->
+        <article class="product-card" data-category="jeans" data-name="سروال جينز سكيني أسود" data-price="220">
+          <div class="product-image">
+            <img src="images/jeans-2.jpg" alt="سروال جينز سكيني أسود" />
+          </div>
+          <div class="product-body">
+            <h3>سروال جينز سكيني أسود</h3>
+            <p>موديل عصري كيبرز الجسم، مثالي للخروج والسهرة.</p>
+            <div class="product-footer">
+              <span class="price">220 درهم</span>
+              <button class="btn btn-whatsapp">اطلب عبر واتساب</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- بطاقة منتج 3 -->
+        <article class="product-card" data-category="classic" data-name="سروال كلاسيكي رمادي" data-price="250">
+          <div class="product-image">
+            <img src="images/classic-1.jpg" alt="سروال كلاسيكي رمادي" />
+          </div>
+          <div class="product-body">
+            <h3>سروال كلاسيكي رمادي</h3>
+            <p>مثالي للعمل والمناسبات الرسمية، قصّة أنيقة ومريحة.</p>
+            <div class="product-footer">
+              <span class="price">250 درهم</span>
+              <button class="btn btn-whatsapp">اطلب عبر واتساب</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- بطاقة منتج 4 -->
+        <article class="product-card" data-category="sport" data-name="سروال سبور قطن" data-price="180">
+          <div class="product-image">
+            <img src="images/sport-1.jpg" alt="سروال سبور قطن" />
+          </div>
+          <div class="product-body">
+            <h3>سروال سبور قطن</h3>
+            <p>مناسب للرياضة والراحة في الدار، قماش خفيف وناعم.</p>
+            <div class="product-footer">
+              <span class="price">180 درهم</span>
+              <button class="btn btn-whatsapp">اطلب عبر واتساب</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- زيد منتجات قد ما بغيتي بنفس الشكل -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div>
+        <h2>من نحن</h2>
+        <p>
+          متجر السراول هو محل متخصص في بيع السروال بجميع الأنواع، كنركزو على الجودة، الراحة، والثمن المناسب.
+        </p>
+        <p>
+          كنوفروا مقاسات متعددة، تصاميم عصرية، وخدمة زبناء عبر واتساب باش تبقى العملية سهلة وبسيطة.
+        </p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight">
+          <span>✅</span>
+          <p>جودة عالية وضمان في القماش والخياطة</p>
+        </div>
+        <div class="highlight">
+          <span>💸</span>
+          <p>أثمنة تنافسية وعروض دورية</p>
+        </div>
+        <div class="highlight">
+          <span>📦</span>
+          <p>إمكانية التوصيل (اتفق مع الزبون عبر واتساب)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>التواصل والطلبات</h2>
+        <p>للطلب أو الاستفسار، تواصل معنا عبر:</p>
+        <ul class="contact-list">
+          <li><strong>واتساب:</strong> <a href="https://wa.me/212676377412" target="_blank">+212 676 377 412</a></li>
+          <li><strong>الهاتف:</strong> 0676 37 74 12</li>
+          <!-- إذا عندك إنستغرام ولا فيسبوك زيدهم هنا -->
+          <!-- <li><strong>إنستغرام:</strong> @yourshopname</li> -->
+        </ul>
+        <p>ما عليك غير تختار الموديل، تبعت لينا القياس واللون، ونتفاهمو على كلشي في واتساب 👍</p>
+      </div>
+      <div class="contact-card">
+        <h3>اطلب دابا من هنا</h3>
+        <p>زرّ على الزر باش تولّي مباشرة لواتساب:</p>
+        <a class="btn btn-primary btn-full" href="https://wa.me/212676377412" target="_blank">
+          طلب سريع عبر واتساب
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> متجر السراول. جميع الحقوق محفوظة.</p>
+      <p class="footer-small">موقع بسيط واحترافي مخصّص لعرض السلع والتواصل عبر واتساب فقط.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
